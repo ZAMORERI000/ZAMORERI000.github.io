@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Decipher Program</title>
+        <style>
+            .center {
+                text-align: center;
+            }
+            p {
+                font-size: 45px;
+                color: #ff8f5e;
+            }
+            .input-text {
+                font-size: 20px;
+            }
+            .white {
+                color: white;
+            }
+            .monospace {
+                font-family: monospace;
+            }
+            #button {
+                font-family: monospace;
+                padding: 10px 12px;
+                border: none;
+                font-size: 18px;
+                border-radius: 4px;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 20px);
+            }
+            #button:hover{
+                color: white;
+                background-color: #ff8f5e
+            }
+            .down {
+                position: absolute;
+                text-align: center;
+                top: 60%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            #output {
+                position: absolute;
+                top: 70%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-family: monospace;
+            }
+            .outline {
+                background-color: white;
+                opacity: 0.85;
+                padding: 20px 10px;
+                position: relative;
+                left: 50%;
+                transform: translate(-50%, 0);
+            }
+            
+        </style>
+    </head>
+    <body background="https://i.ytimg.com/vi/p_OX8TPf5Rk/maxresdefault.jpg">
+    <p class="monospace color center outline"><strong>MESSAGE DECRYPTER</strong></p>
+        <div class="center monospace white input-text">
+            <label for="input">Passkey: </label>
+            <input id="input" type="password"> <br> <br>
+        </div> <br>
+        <div class="monospace white center input-text">
+            <label for="secret_message">Message: </label>
+            <input id="secret_message" type="text">
+        </div>
+        <button id="button">Decode Message</button>
+        <p class="monospace white down">Your message: </p>
+        <p id="output"></p>
+        <script src="Decoder.js"></script>
+    </body>
+</html>
