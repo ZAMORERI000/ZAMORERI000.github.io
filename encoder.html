@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <script>
-            document.getElementById("button").onclick = function(){
+            function encoderFun(){
                 key = document.getElementById("password").value;
                 message = document.getElementById("text").value;
                 var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 
@@ -105,7 +105,7 @@ function sendLink() {
             <label for="text">Message: </label>
             <input id="text" type="text">
         </div>
-        <button id="button">Encode Message</button>
+        <button id="button" onclick='encoderFun()'>Encode Message</button>
         <p class="monospace white down">Your message:</p>
         <p id="output"></p>
     </body>
