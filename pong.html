@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script src='pong.js'></script>
+        <style>
+            .left {
+                border: none;
+                padding: 8px 12px;
+                font-family: monospace;
+                color: white;
+                background-color: blue;
+                border-radius: 3px;
+                font-size: 18px;
+            }
+            .right {
+                border: none;
+                padding: 8px 12px;
+                font-family: monospace;
+                color: white;
+                background-color: red;
+                border-radius: 3px;
+                font-size: 18px;
+            }
+            .up {
+                position: absolute;
+                left: 50%;
+            }
+            .down {
+                position: absolute;
+                left: 56.2%;
+            }
+        </style>
+    </head>
+
+    <body onload='initCanvas()'>
+        <canvas id='myCanvas' width="600px" height="400px"></canvas>
+        <br>
+        <br>
+        <button id="left-button" class="left"></button>
+        <button id="right-button" class="right up"></button>
+        
+    </body>
+</html>
