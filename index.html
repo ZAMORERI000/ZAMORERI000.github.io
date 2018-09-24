@@ -5,27 +5,62 @@
             function newLink(){
                 window.open('https://www.google.com/search?safe=strict&rlz=1C5CHFA_enUS814US814&ei=Ex6pW6H_NsGfzwKUn4zYBg&q=google+pacman&oq=google+pacman&gs_l=psy-ab.3..0l2j0i20i263l2j0j0i131j0l4.1307.5890..6052...2.0..1.195.1362.15j1......0....1..gws-wiz.....6..0i71j35i39j0i20i264j0i67j0i131i67j0i131i20i263i264j0i131i20i264j0i10.-Nhis9GPg_s', '_blank');
             }
+            function imgLink (){
+                window.open('http://bdfjade.com/cool-pictures.html');
+            }
         </script>
         <style>
-            h1 {
+            .white {
                 color: white;
             }
             body {
                 background-color: black;
             }
-            h2 {
+            img {
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, 0);
+                width: 600px;
+                height: 400px;
+            }
+            .center {
+                text-align: center;
+            }
+            .bottom {
+                position: absolute;
+                top: 90%;
+            }
+            .table {
+                color: crimson;
+                font-size: 32;
+                font-family:'Gill Sans'
+            }
+            .imageLink {
+                position: absolute;
+                top: 70%;
+                left: 55%;
                 color: white;
             }
         </style>
     </head>
     <body>
-        <h1>CAP'N CRUNCHES CRAZY CODE</h1>
-        <img src='https://i.imgur.com/vlmUXyk.jpg' style='width:600px;height:400px;'>
+        <h1 class='white center'>CAP'N CRUNCHES CRAZY CODE</h1>
+        <img src='https://wallpaper.wiki/wp-content/uploads/2017/06/Diamond-Wallpaper-HD-Backgrounds-free-download.jpg'>
+        <a class='imageLink' href='' onclick='imgLink()'>BDFjade.com</a>
         <br>
-        <a href=''  onclick= 'newLink()'>Favorite Website</a>
         <br>
-        <a href='encoder.html' title='Encipher Program'>ENCYPHER PROGRAM</a>
-        <a href='pong.html' title='PONG'>PONG LINK</a>
-        <h2>E.Z.</h2>
+        <p class='table'>TABLE OF CONTENTS</p>
+        <ul class='white'>
+            <li><a class='white' href=''  onclick= 'newLink()'>FAVORITE WEBSITE</a></li>
+            <br>
+            <li><a class='white' href='encoder.html' title='Encipher Program'>ENCYPHER PROGRAM</a></li>
+            <br>
+            <li><a class='white' href='pong.html' title='PONG'>PONG LINK</a></li>
+            <br>
+            <li><a class='white' href='listSorter.html' title='List Sorter'>LIST SORTER</a></li>
+        </ul>
+        
+        <p class='table white bottom'>E.Z.</p>
     </body>
 </html>
